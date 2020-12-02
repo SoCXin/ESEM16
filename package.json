@@ -1,0 +1,7 @@
+{
+    "name": "STM32F401",
+    "description": "ST Cortex M4 84MHz MCU",
+    "system": "*",
+    "url": "https://github.com/SoCXin/STM32F401",
+    "version": "1.0.0"
+}
