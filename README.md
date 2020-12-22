@@ -35,6 +35,7 @@
 *  有功电能脉冲CF输出可配置
 
 [![sites](docs/ESEM16.png)](http://www.essemi.com/product/48.html)
+
 #### 关键特性
 
 * 差分输入信号范围±600mV
@@ -50,4 +51,11 @@
 ### [选型建议](https://github.com/SoCXin)
 
 [ESEM16](https://github.com/SoCXin/ESEM16) 应用于智能插排、计量电表、充电桩等领域
-###  [SoC.芯](http://www.SoC.Xin)
+
+电表应用类计量SoC
+
+* [RN8613](https://github.com/SoCXin/RN8613)
+* [RN8213](https://github.com/SoCXin/RN8213)
+* [HT5027](https://github.com/SoCXin/HT5027)
+
+###  [www.SoC.xin(芯)](http://www.SoC.Xin)

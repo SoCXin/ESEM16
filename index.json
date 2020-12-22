@@ -1,12 +1,19 @@
 {
+    "type":"SoC",
     "name":"ESEM16",
-    "type":"MCU",
-    "Core":"Cortex M0",
-    "Freq":"48MHz",
     "peripheral": ["ADC","LCDC","RTC","UART","I2C","SPI","PWM"],
     "package":["SSOP24"],
     "SRAM":2048,
     "Flash":36864,
+    "Core": {
+        "num": 1,
+        "architecture":"Cortex M0",
+        "Freq":20
+    },
+    "SoC": {
+        "system": ["MCU","energy-meter"],
+        "energy-meter": [1000,500]
+    },
     "UART": {
         "num": 1,
         "ISO7816": 1,
@@ -36,9 +43,13 @@
         "Ivdd": 0.5
     },
     "PWR": {
-        "VDD": [3000,3600],
-        "Ivdd": 3.5,
-        "rate": 1024
+        "VDD": [2500,5500],
+        "IDD": [2.21,14.31],
+        "Imax": 120
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
     },
     "upload": {
         "ISP": true,
@@ -46,9 +57,11 @@
         "SWD": true,
         "speed": 115200
     },
-    "vendor":"Eastsoft",
+    "manufacturer": {
+        "vendor":"Eastsoft",
+        "homepage": "http://www.essemi.com/product/15.html"
+    },
     "url":"http://www.SoC.xin/ESEM16",
     "repo":"https://github.com/SoCXin/ESEM16",
-    "homepage": "http://www.essemi.com/product/15.html",
     "version":"1.0.0"
 }
